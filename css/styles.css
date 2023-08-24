@@ -1,0 +1,366 @@
+:root {
+  /* COLORS */
+  --iris-color: #4d5ae5;
+  --ocean-color: #404bbf;
+  --navyblue-color: #2e2f42;
+  --slate-color: #434455;
+  --white-color: #ffffff;
+  --cloud-color: #f4f4fd;
+  --cornflower-color: #e7e9fc;
+
+  /* TEXT */
+  --bold-font-weight: 700;
+  --medium-font-weight: 500;
+  --regular-font-weight: 400;
+
+  --body-font-size: 16px;
+
+  --main-letter-spacing: 0.02em;
+  --logo-letter-spacing: 0.03em;
+  --button-letter-spacing: 0.04em;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white-color);
+  color: var(--slate-color);
+
+  font-size: var(--body-font-size);
+  font-weight: var(--regular-font-weight);
+  line-height: 1.5;
+  letter-spacing: var(--main-letter-spacing);
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.07;
+  color: var(--white-color);
+  text-align: center;
+
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.11;
+  text-align: center;
+  color: var(--navyblue-color);
+  text-transform: capitalize;
+
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: var(--medium-font-weight);
+  line-height: 1.2;
+  text-align: center;
+  color: var(--navyblue-color);
+  text-transform: capitalize;
+
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+
+  margin: 0;
+  padding-left: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+  width: 1158px;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ************************************* */
+/* LOGO */
+
+.logo-header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.17;
+  color: var(--iris-color);
+  text-transform: uppercase;
+  letter-spacing: var(--logo-letter-spacing);
+
+  display: inline-block;
+  margin-right: 76px;
+}
+
+.logo-studio-header {
+  color: var(--navyblue-color);
+}
+
+/* ************************************** */
+/* HEADER */
+
+.header-page {
+  border-bottom: 1px solid var(--cornflower-color);
+}
+
+.nav-link {
+  color: var(--navyblue-color);
+  font-weight: var(--medium-font-weight);
+  letter-spacing: var(--main-letter-spacing);
+
+  padding: 24px 0;
+  display: block;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  text-decoration: underline;
+  color: var(--ocean-color);
+}
+
+.address-header {
+  font-style: normal;
+}
+.address-link {
+  color: var(--slate-color);
+}
+
+.address-link:hover,
+.address-link:focus,
+.address-link:active {
+  text-decoration: underline;
+  color: var(--ocean-color);
+}
+
+.header-main-div {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  margin-right: 332px;
+  align-items: center;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
+
+/* ************************************** */
+/* HERO */
+
+.hero-section {
+  background-color: var(--navyblue-color);
+  padding: 188px 0;
+}
+
+.hero-heading {
+  letter-spacing: var(--main-letter-spacing);
+
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+
+.hero-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--body-font-size);
+  font-weight: var(--medium-font-weight);
+  line-height: 1.5;
+  letter-spacing: var(--button-letter-spacing);
+  background-color: var(--iris-color);
+  color: var(--white-color);
+  cursor: pointer;
+
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--ocean-color);
+}
+
+/* ************************************** */
+/* SECTION "VALUES" */
+
+.value-li-heading {
+  letter-spacing: var(--main-letter-spacing);
+
+  text-align: left;
+  margin-bottom: 8px;
+}
+.value-li-paragraf {
+  letter-spacing: var(--main-letter-spacing);
+}
+
+.value-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.value-li-item {
+  width: calc((100% - 72px) / 4);
+}
+
+/* ************************************** */
+/* SECTION "TEAM" */
+
+.team-section {
+  background-color: var(--cloud-color);
+}
+
+.team-heading {
+  letter-spacing: var(--main-letter-spacing);
+
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.team-li {
+  background-color: var(--white-color);
+
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+}
+
+.team-li-card {
+  padding: 32px 0;
+}
+
+.team-li-heading {
+  letter-spacing: var(--main-letter-spacing);
+
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-li-paragraph {
+  text-align: center;
+}
+
+/* ************************************** */
+/* SECTION "PORTFOLIO" */
+.portfolio-heading {
+  letter-spacing: var(--main-letter-spacing);
+
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+  justify-content: center;
+}
+
+.portfolio-li-item {
+  width: calc((100% - 72) / 3);
+}
+
+.portfolio-li-item-card {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower-color);
+  border-top: none;
+}
+
+.portfolio-li-heading {
+  text-align: left;
+  letter-spacing: var(--main-letter-spacing);
+
+  margin-bottom: 8px;
+}
+
+.portfolio-li-paragraph {
+  letter-spacing: var(--main-letter-spacing);
+}
+
+/* ************************************** */
+/* FOOTER */
+
+/* LOGO */
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.17;
+  color: var(--iris-color);
+  text-transform: uppercase;
+  letter-spacing: var(--logo-letter-spacing);
+
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-studio-footer {
+  color: var(--cloud-color);
+}
+
+.footer-section {
+  background-color: var(--navyblue-color);
+  /* padding-left: 156px; */
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-paragraph {
+  color: var(--cloud-color);
+
+  width: 264px;
+}

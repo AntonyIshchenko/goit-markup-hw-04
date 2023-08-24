@@ -7,6 +7,7 @@
   --white-color: #ffffff;
   --cloud-color: #f4f4fd;
   --cornflower-color: #e7e9fc;
+  --lightslate-color: #8e8f99;
 
   /* TEXT */
   --bold-font-weight: 700;
@@ -109,6 +110,10 @@ img {
   overflow: hidden;
 }
 
+.icon {
+  fill: none;
+}
+
 /* ************************************* */
 /* LOGO */
 
@@ -193,6 +198,16 @@ img {
 .hero-section {
   background-color: var(--navyblue-color);
   padding: 188px 0;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/hero-back.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: ; */
 }
 
 .hero-heading {
@@ -250,6 +265,19 @@ img {
 
 .value-li-item {
   width: calc((100% - 72px) / 4);
+}
+
+.value-li-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+
+  border-radius: 4px;
+  border: 1px solid var(--lightslate-color);
+  background: var(--cloud-color);
 }
 
 /* ************************************** */

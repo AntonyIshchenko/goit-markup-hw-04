@@ -149,12 +149,15 @@ img {
 }
 
 .nav-link {
-  color: var(--navyblue-color);
+  /* color: var(--navyblue-color); */
   font-weight: var(--medium-font-weight);
   letter-spacing: var(--main-letter-spacing);
 
-  padding: 20px 0 0 0;
+  padding: 24px 0;
   display: block;
+
+  position: relative;
+  color: var(--ocean-color);
 
   transition: color var(--transition-duration) var(--transition-time-function);
 }
@@ -167,15 +170,20 @@ img {
 }
 
 .nav-link::after {
-  display: block;
+  /* display: block; */
   content: '';
-  border-radius: 2px;
-  width: inherit;
-  margin-top: 20px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
   height: 4px;
   background-color: inherit;
+  border-radius: 2px;
 
-  transition: background-color var(--transition-duration) var(--transition-time-function);
+  width: inherit;
+  margin-top: 20px;
+
+  /* transition: background-color var(--transition-duration) var(--transition-time-function); */
   /* background-color: var(--green-color); */
 }
 
@@ -186,8 +194,12 @@ img {
 }
 
 .nav-link-div {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.nav-link-item {
+  /* position: relative; */
 }
 
 .address-header {
@@ -209,6 +221,8 @@ img {
 .header-main-div {
   display: flex;
   align-items: center;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-menu {
@@ -234,15 +248,13 @@ img {
   background-color: var(--navyblue-color);
   padding: 188px 0;
 
-  background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(/images/hero-back.png);
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: ; */
+
+  background-size: cover;
+  max-width: 1440px;
 }
 
 .hero-heading {
@@ -311,6 +323,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 8px;
+  height: 112px;
 
   border-radius: 4px;
   border: 1px solid var(--lightslate-color);

@@ -151,6 +151,23 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
+.nav-link-old {
+  color: var(--navyblue-color);
+  font-weight: var(--medium-font-weight);
+  letter-spacing: var(--main-letter-spacing);
+
+  padding: 24px 0;
+  display: block;
+
+  transition: color var(--transition-duration) var(--transition-time-function);
+}
+
+.nav-link-old:hover,
+.nav-link-old:focus,
+.nav-link-old:active {
+  color: var(--ocean-color);
+}
+
 .nav-link {
   /* color: var(--navyblue-color); */
   font-weight: var(--medium-font-weight);
@@ -168,12 +185,11 @@ img {
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
-  /*  text-decoration: underline; */
   color: var(--ocean-color);
 }
 
 .nav-link::after {
-  /* display: block; */
+  display: block;
   content: '';
   position: absolute;
   left: 0;
@@ -183,8 +199,8 @@ img {
   background-color: var(--ocean-color);
   border-radius: 2px;
 
-  width: inherit;
-  margin-top: 20px;
+  width: 100%;
+  /* margin-top: 20px; */
 
   /* transition: background-color var(--transition-duration) var(--transition-time-function); */
   /* background-color: var(--green-color); */

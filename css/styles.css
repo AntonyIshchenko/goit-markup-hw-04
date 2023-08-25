@@ -146,6 +146,9 @@ img {
 
 .header-page {
   border-bottom: 1px solid var(--cornflower-color);
+
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .nav-link {
@@ -177,7 +180,7 @@ img {
   bottom: -1px;
 
   height: 4px;
-  background-color: inherit;
+  background-color: var(--ocean-color);
   border-radius: 2px;
 
   width: inherit;
@@ -221,8 +224,6 @@ img {
 .header-main-div {
   display: flex;
   align-items: center;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-menu {
@@ -249,12 +250,14 @@ img {
   padding: 188px 0;
 
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(/images/hero-back.png);
+    url(/images/hero-back.jpg);
   background-position: center;
   background-repeat: no-repeat;
 
   background-size: cover;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-heading {
@@ -364,7 +367,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 16px;
+  padding: 32px 0;
   gap: 8px;
 }
 
@@ -381,23 +384,40 @@ img {
 
 .team-social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
 }
 
 .team-social-li {
-  display: block;
+  /* display: block;
   background-color: var(--iris-color);
   padding: 12px;
-  border-radius: 50%;
+  border-radius: 50%; */
   width: 40px;
   height: 40px;
+
+  /* transition: background-color var(--transition-duration) var(--transition-time-function); */
+}
+
+.team-social-link {
+  display: flex;
+  background-color: var(--iris-color);
+  /* padding: 12px; */
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 
   transition: background-color var(--transition-duration) var(--transition-time-function);
 }
 
-.team-social-li:hover,
-.team-social-li:focus {
+.team-social-li-icon {
+  fill: var(--cloud-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
   background-color: var(--ocean-color);
 }
 
